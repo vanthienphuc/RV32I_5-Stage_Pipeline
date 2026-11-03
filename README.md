@@ -215,11 +215,10 @@ flowchart TB
 | **I-Type** | `addi`, `slti`, `sltiu`, `xori`, `ori`,
 `andi`, `slli`, `srli`, `srai`, `jalr` |
 Register-immediate operations and indirect jump. |
-| **Load**   | `lw` | Load Word (32-bit) from Data Memory. |
-| **Store**  | `sw` | Store Word (32-bit) to Data Memory. |
+| **S-Type** | `sb`, `sh`, `sw` | Store Byte, Halfword, and Word to Data Memory. |
 | **B-Type** | `beq`, `bne`, `blt`, `bge`, `bltu`, `bgeu` | Conditional branches evaluating equality and magnitude. |
-| **J-Type** | `jal` | Jump and Link (unconditional jump with return address). |
 | **U-Type** | `lui`, `auipc` | Upper immediate instructions. |
+| **J-Type** | `jal` | Jump and Link (unconditional jump with return address). |
 
 ## Verification Environment
 The design is verified using a pure Verilog testbench (`tb_RISCV_Pipeline.v`). 

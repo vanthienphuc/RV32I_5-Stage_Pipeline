@@ -212,9 +212,7 @@ flowchart TB
 | Type       | Instructions Supported | Description |
 |------------|------------------------|-------------|
 | **R-Type** | `add`, `sub`, `and`, `or`, `xor`, `sll`, `srl`, `sra`, `slt`, `sltu` | Register-to-register arithmetic and logic operations. |
-| **I-Type** | `addi`, `slti`, `sltiu`, `xori`, `ori`,
-`andi`, `slli`, `srli`, `srai`, `jalr` |
-Register-immediate operations and indirect jump. |
+| **I-Type** | `addi`, `slti`, `sltiu`, `xori`, `ori`, `andi`, `slli`, `srli`, `srai`, `lb`, `lh`, `lw`, `lbu`, `lhu`, `jalr` | Register-immediate operations, load instructions, and indirect jump. |
 | **S-Type** | `sb`, `sh`, `sw` | Store Byte, Halfword, and Word to Data Memory. |
 | **B-Type** | `beq`, `bne`, `blt`, `bge`, `bltu`, `bgeu` | Conditional branches evaluating equality and magnitude. |
 | **U-Type** | `lui`, `auipc` | Upper immediate instructions. |
